@@ -12,8 +12,19 @@ public class Test {
         this.myName = myName;
     }
 
+    public void setWriter(IWriter writer) {
+        this.writer = writer;
+    }
+
+    public void setMyName(String myName) {
+        this.myName = myName;
+    }
+
+    public Test() {
+    }
+
     public void run(){
         String s = "This is my test, "+ myName;
         writer.writer(s);
     }
-    }
+}
